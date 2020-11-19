@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<strings.h>
+
+struct node{
+char data;
+struct node *next;
+}*top=NULL;
+
+void push(char x)
+{
+struct node *newnode;
+newnode=(struct node*)malloc(sizeof(struct node));
+if(newnode==NULL)
+{
+printf("Stack is full\n");
